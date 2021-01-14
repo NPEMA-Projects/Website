@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css" id="Cur">
+	
+</style>
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/Main.css">
+	<title>NPEMA Medvents</title>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<source src="" type="">
+</head>
+<body>
+	<div id="nav">
+		<ul>
+	 		<li class="dropdown">
+	          <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-bars" style="font-size:24px;"></i></a>
+	          <div class="dropdown-content">
+	          	<a href="#">Join MEDVENTS</a>
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>  
+	          </div>
+	        </li>
+			<li><a href="MS.html">Medical Services</a></li>
+			<li><a href="CT.html">Courses & Training</a></li>
+			<li><a href="AU.html">About Us</a></li>
+			<li><a href="../index.html">Home</a></li>
+	 		<li style="float:left"><a href='#'>NPEMA</a></li>
+		</ul>
+	</div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://static.wixstatic.com/media/454bea_977243fe7ac34decb46349a1d8ad23d3~mv2.png/v1/crop/x_6,y_0,w_825,h_827/fill/w_159,h_158,al_c,q_85,usm_0.66_1.00_0.01/Logo.webp" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="Email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#" id="psw">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
